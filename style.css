@@ -19,11 +19,31 @@ p>b{
   text-align: center;
   position: relative;
   top:70px;
+  left:16%;
+  transform: tranalateX(-50%);
+  width:100%;
+  height:27px;
   font-size: 20px;
   letter-spacing: 0px;
   word-spacing: 2px;
   color:rgba(0,0,0,0.6);
   transition: 0.5s ease;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: writeEffect 6s steps(18) infinite;
+}
+@keyframes writeEffect{
+  0%{
+    border-right:3px solid white;
+    width:0ch;
+    opacity: 0.5;
+  }
+  100%{
+    width:18ch;
+    padding-right: 5px;
+    border-right:3px solid white;
+  }
 }
 #page{
   height:100vh;
@@ -208,7 +228,7 @@ div > p{
 /* #9ba8ab */ 
 #checkbox_container{
   position: absolute;
-  height:22px;
+  height:20px;
   top:20px;
   width:40px;
   border-radius: 12px;
@@ -224,7 +244,7 @@ div > p{
 #show{
   position: absolute;
   left:auto;
-  top:23.5px;
+  top:22.5px;
   right:42px;
   height:15px;
   width:15px;
